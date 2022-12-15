@@ -26,13 +26,16 @@ public class Main {
         movies.readAllMovie();
 */
         //ToDO implement While(True) where user can go through all Options by himself
-
-        while (true){
+        boolean run = true;
+        while (run){
             System.out.println("Press '1' for creating a movie");
             System.out.println("Press '2' for reading all movies");
             System.out.println("Press '3' for reading 1 movie");
             System.out.println("Press '4' for updating a movie");
-            System.out.println("Press '5' for deleting a movie");
+            System.out.println("Press '5' for updating a movie rating");
+            System.out.println("Press '6' for deleting a movie");
+            System.out.println("Press '7' exit");
+
 
             System.out.println("Input: ");
             int userInput = userInputInt();
@@ -60,6 +63,10 @@ public class Main {
 
                 case 6:
                     deleteMovie();
+                    break;
+
+                case 7:
+                    run = false;
                     break;
 
                 default:

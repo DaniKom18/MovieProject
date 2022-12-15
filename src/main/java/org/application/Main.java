@@ -9,28 +9,17 @@ public class Main {
     private static final Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
 
-/*
-        movies.createMovie("Albert", "Hoffman", "LSD", 10.0);
-        movies.createMovie("John", "Hoffman", "Informatik", 6.0);
-        movies.createMovie("Jo", "Kreisler", "Move", 9.0);
+        //TODO Save data in JSON file
+        //TODO Design Output
 
-        System.out.println("_".repeat(10));
-        movies.readMovie(1);
-        System.out.println("_".repeat(10));
-        movies.readAllMovie();
-        System.out.println("_".repeat(10));
-        movies.updateMovie(2, "John2", "Jimbean", "ThI", 0.0 );
-        System.out.println("_".repeat(10));
-        movies.deleteMovie(3);
-        System.out.println("_".repeat(10));
-        movies.readAllMovie();
-*/
-        //ToDO implement While(True) where user can go through all Options by himself
+        //read json File and put values from last start into Hashmap again
+        movies.jsonReader();
+
         boolean run = true;
         while (run){
             System.out.println("Press '1' for creating a movie");
             System.out.println("Press '2' for reading all movies");
-            System.out.println("Press '3' for reading 1 movie");
+            System.out.println("Press '3' for reading one movie");
             System.out.println("Press '4' for updating a movie");
             System.out.println("Press '5' for updating a movie rating");
             System.out.println("Press '6' for deleting a movie");

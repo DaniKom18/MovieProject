@@ -1,8 +1,18 @@
 package org.entity;
 
-public class Movie {
-    private static int sNextId = 1;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
+public class Movie {
+    //is overwritten in MovieManager createMovie methode
+    //sNextId = mMovieManager.size() + 1;
+    //Not really happy with that Choice
+    //but it works :)
+    public static int sNextId = 1;
     private int mId;
     private Author mAuthor;
     private String mMovieName;
@@ -41,4 +51,5 @@ public class Movie {
                 ", mRating=" + mRating +
                 '}';
     }
+
 }

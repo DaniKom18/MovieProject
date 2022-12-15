@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e05a8ac7-2dce-4dd3-b5ad-c85ccb66028c" name="Changes" comment="Movie Application finished">
+    <list default="true" id="e05a8ac7-2dce-4dd3-b5ad-c85ccb66028c" name="Changes" comment="User can now exit the Programm">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/data/movie.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/entity/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/entity/MovieManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/entity/MovieManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,20 +38,27 @@
     </option>
   </component>
   <component name="ProjectId" id="2Iry0duADJeeEHcMSN0Zw9axLhi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.entity" />
@@ -62,6 +74,8 @@
       <updated>1670953774921</updated>
       <workItem from="1670953775994" duration="8166000" />
       <workItem from="1671102222753" duration="6000" />
+      <workItem from="1671114526966" duration="431000" />
+      <workItem from="1671129625157" duration="3721000" />
     </task>
     <task id="LOCAL-00001" summary="Movie Application finished">
       <created>1670962770646</created>
@@ -70,14 +84,23 @@
       <option name="project" value="LOCAL" />
       <updated>1670962770646</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="User can now exit the Programm">
+      <created>1671114763488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671114763488</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Movie Application finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Movie Application finished" />
+    <MESSAGE value="User can now exit the Programm" />
+    <option name="LAST_COMMIT_MESSAGE" value="User can now exit the Programm" />
   </component>
 </project>

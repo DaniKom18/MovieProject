@@ -1,38 +1,29 @@
-{
-  "1": {
-    "mId": 1.0,
+[
+  {
+    "mId": 1,
     "mAuthor": {
-      "mFirstName": "awd",
-      "mLastName": "awd"
+      "mFirstName": "new",
+      "mLastName": "movie"
     },
-    "mMovieName": "ad",
+    "mMovieName": "next",
+    "mRating": 3.0
+  },
+  {
+    "mId": 2,
+    "mAuthor": {
+      "mFirstName": "sf",
+      "mLastName": "sdf"
+    },
+    "mMovieName": "sdf",
     "mRating": 1.0
   },
-  "2": {
-    "mId": 2.0,
-    "mAuthor": {
-      "mFirstName": "Wakanda",
-      "mLastName": "ForEver"
-    },
-    "mMovieName": "Yeah",
-    "mRating": 10.0
-  },
-  "3": {
+  {
     "mId": 3,
     "mAuthor": {
-      "mFirstName": "adawd",
-      "mLastName": "dwadawd"
+      "mFirstName": "HeyLow",
+      "mLastName": "Now"
     },
-    "mMovieName": "awddawd",
-    "mRating": 1.0
-  },
-  "4": {
-    "mId": 4,
-    "mAuthor": {
-      "mFirstName": "adwada",
-      "mLastName": "dawdadsdadsadasdasdasd"
-    },
-    "mMovieName": "123",
+    "mMovieName": "2222",
     "mRating": 1.0
   }
-}
+]

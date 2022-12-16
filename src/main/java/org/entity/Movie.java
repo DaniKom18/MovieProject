@@ -12,11 +12,23 @@ public class Movie {
     //sNextId = mMovieManager.size() + 1;
     //Not really happy with that Choice
     //but it works :)
-    public static int sNextId = 1;
+    private static int sNextId = 1;
     private int mId;
     private Author mAuthor;
     private String mMovieName;
     private Double mRating;
+
+    public Author getmAuthor() {
+        return mAuthor;
+    }
+
+    public String getmMovieName() {
+        return mMovieName;
+    }
+
+    public Double getmRating() {
+        return mRating;
+    }
 
     public Movie(String aAuthorFirstName, String aAuthorLastName, String aMovieName, Double aRating) {
         this.mId = sNextId;

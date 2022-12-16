@@ -9,17 +9,16 @@ import java.io.Reader;
 import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Collection;
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.NoSuchElementException;
+import java.util.stream.Stream;
 
-import static org.entity.Movie.sNextId;
 
 public class MovieManager {
     private HashMap<Integer, Movie>mMovieManager = new HashMap<>();
+    private final String jsonFile = "src/main/java/org/data/movie.json";
     public void createMovie(String aAuthorFirstName, String aAuthorLastName, String aMovieName, Double aRating){
-        sNextId = mMovieManager.size() + 1;
 
         Movie movie = new Movie(aAuthorFirstName,aAuthorLastName, aMovieName, aRating);
         mMovieManager.put(movie.getmId(), movie);
@@ -71,8 +70,8 @@ public class MovieManager {
     private void jsonWriter() throws IOException {
         try {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            Writer writer = new FileWriter("src/main/java/org/data/movie.json");
-            gson.toJson(mMovieManager, writer);
+            Writer writer = new FileWriter(jsonFile);
+            gson.toJson(mMovieManager.values(), writer);
             writer.close();
         }
         catch (Exception e){
@@ -84,8 +83,20 @@ public class MovieManager {
     public void  jsonReader(){
         Gson gson = new Gson();
         try {
-            Reader reader = Files.newBufferedReader(Paths.get("src/main/java/org/data/movie.json"));
-            mMovieManager = gson.fromJson(reader, HashMap.class);
+            Reader reader = Files.newBufferedReader(Paths.get(jsonFile));
+            //Takes the JSON File and creates an Array where all MOVIES are stored
+            Movie [] aMovies = gson.fromJson(reader, Movie[].class);
+            //Iterate through Array to get a Movie
+            for (int i = 0; i < aMovies.length; i++) {
+                //Use the createMovie Methode because otherwise the Automated ID will not be initialized right
+                //Other way would be to set the var from Movie {sNextId = aMovies.length()} would be less code
+                //but sNextId would need to be public for that.
+                createMovie(aMovies[i].getmAuthor().getmFirstName(),
+                        aMovies[i].getmAuthor().getmLastName(),
+                        aMovies[i].getmMovieName(),
+                        aMovies[i].getmRating());
+            }
+
 
         } catch (IOException e) {
             throw new RuntimeException(e);

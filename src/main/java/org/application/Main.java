@@ -15,6 +15,7 @@ public class Main {
         //read json File and put values from last start into Hashmap again
         movies.jsonReader();
 
+
         boolean run = true;
         while (run){
             System.out.println("Press '1' for creating a movie");
